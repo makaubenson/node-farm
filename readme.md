@@ -36,7 +36,7 @@ console.log("File written");
 - There exists only a single thread in node.js.
 - Thus every user or operation will have to wait for the blocking code to execute.
 
-## Read amd write Files asynchronously
+## Read and write Files asynchronously
 
 ```
 fs.readFile("./txt/start.txt", (err, data) => {

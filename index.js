@@ -38,6 +38,7 @@ const http = require("http");
 //SERVER
 //creating server
 const server = http.createServer((req, res) => {
+  //   console.log(req);
   res.end("Hello from the server"); //sending response
 });
 //listening to requests(starting the server)

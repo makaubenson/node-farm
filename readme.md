@@ -17,3 +17,21 @@ console.log(hello);
 const textIn = fs.readFileSync("./txt/input.txt", "utf-8");
 console.log(textIn);
 ```
+
+### writing file synchronously
+
+```
+const textOut = `This is what we know about the avocado ${textIn}. \nCreated on ${Date.now()}`;
+fs.writeFileSync("./txt/output.txt", textOut);
+console.log("File written");
+```
+
+## Blocking and Non-Blocking asynchronous Nature of Node.Js
+
+- Synchronous code is known to be blocking.
+- Asynchronous code is known to be non-blocking.
+
+### Why do we use callbacks so much in node.js
+
+- There exists only a single thread in node.js.
+- Thus every user or operation will have to wait for the blocking code to execute.

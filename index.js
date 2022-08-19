@@ -1,5 +1,6 @@
 const fs = require("fs"); //file system module
 const http = require("http");
+const url = require("url");
 /////////////////////////
 ////// FILES////////////
 // const hello = "Hello World";
@@ -38,8 +39,18 @@ const http = require("http");
 //SERVER
 //creating server
 const server = http.createServer((req, res) => {
-  //   console.log(req);
-  res.end("Hello from the server"); //sending response
+  const pathName = req.url;
+  if (pathName === "/" || pathName === "/overview") {
+    res.end("This is the OVERVIEW"); //sending response
+  } else if (pathName === "/product") {
+    res.end("This is the PRODUCT"); //sending response
+  } else {
+    res.writeHead(404, {
+      "Content-type": "text/html",
+      "my-own-header": "hello-world",
+    });
+    res.end("<h1>PAGE NOT FOUND!</h1>");
+  }
 });
 //listening to requests(starting the server)
 server.listen(8000, "127.0.0.1", () => {

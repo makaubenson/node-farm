@@ -26,7 +26,7 @@ fs.writeFileSync("./txt/output.txt", textOut);
 console.log("File written");
 ```
 
-## Blocking and Non-Blocking asynchronous Nature of Node.Js
+### Blocking and Non-Blocking asynchronous Nature of Node.Js
 
 - Synchronous code is known to be blocking.
 - Asynchronous code is known to be non-blocking.
@@ -35,3 +35,13 @@ console.log("File written");
 
 - There exists only a single thread in node.js.
 - Thus every user or operation will have to wait for the blocking code to execute.
+
+## Read amd write Files asynchronously
+
+```
+fs.readFile("./txt/start.txt", (err, data) => {
+
+});
+```
+
+- The callback function in `readFile()` receives 2 arguments, error and data. The error is ussualy the first argument.

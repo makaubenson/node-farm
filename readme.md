@@ -45,3 +45,11 @@ fs.readFile("./txt/start.txt", (err, data) => {
 ```
 
 - The callback function in `readFile()` receives 2 arguments, error and data. The error is ussualy the first argument.
+
+### Creating Server
+
+```
+http.createServer((req, res) => {
+  res.end("Hello from the server"); //sending response
+});
+```

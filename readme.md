@@ -80,3 +80,7 @@ const server = http.createServer((req, res) => {
   }
 });
 ```
+
+### API
+
+- Service from which we can request data.

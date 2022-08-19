@@ -10,3 +10,10 @@ console.log(hello);
 - To run the code above without browser we write `node index.js` in the terminal.
 
 ## Read and Write Files
+
+### reading file synchronously
+
+```
+const textIn = fs.readFileSync("./txt/input.txt", "utf-8");
+console.log(textIn);
+```

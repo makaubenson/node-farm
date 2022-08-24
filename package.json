@@ -1,0 +1,19 @@
+{
+  "name": "node-farm",
+  "version": "1.0.0",
+  "description": "learning nodejs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/makaubenson/node-farm.git"
+  },
+  "author": "Benson Makau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/makaubenson/node-farm/issues"
+  },
+  "homepage": "https://github.com/makaubenson/node-farm#readme"
+}

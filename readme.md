@@ -80,3 +80,7 @@ const server = http.createServer((req, res) => {
   }
 });
 ```
+
+### Modules
+
+- In node.js every file is treated as a module

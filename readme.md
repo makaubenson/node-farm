@@ -84,3 +84,16 @@ const server = http.createServer((req, res) => {
 ### Modules
 
 - In node.js every file is treated as a module
+
+### NPM
+
+- `npm init`
+
+### Types of Packages
+
+- Regular / Simple dependancies
+- packages that contain some code that we will include in our code. Our code depends on them to work correctly.
+- - Packages required by your application in production.
+
+- Development dependancies
+- - Packages that are only needed for local development and testing.
